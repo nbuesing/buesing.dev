@@ -1,10 +1,7 @@
----
-title: Where are my Keys?
-date: 2020-01-01
-excerpt: Using Location Data to Showcase Keys, Windows, and Joins in Kafka Streams DSL and KSQL
-authors:
-  - Neil Buesing
----
++++
+title = "Where are my Keys?"
+date = "2020-01-01"
++++
 
 Sometimes the hard part to Kafka Streams is understanding how to partition the data.
 

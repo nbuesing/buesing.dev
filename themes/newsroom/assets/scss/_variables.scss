@@ -9,6 +9,7 @@
   --text: var(--dark);
   --font: 'Metropolis', sans-serif;
   --theme: #04a763;
+  --code: #088;
   --ease: cubic-bezier(.19,1,.22,1);
 
   @mixin darkmode {
@@ -18,9 +19,9 @@
     --accent: var(--bubble);
     *{
       box-shadow: none !important;
-    } 
+    }
   }
-  
+
   &[data-mode="dim"] {
     @include darkmode;
     .color {
@@ -33,7 +34,7 @@
       }
     }
   }
-  @media (prefers-color-scheme: dark) { 
+  @media (prefers-color-scheme: dark) {
     &:not([data-mode="lit"]) {
       @include darkmode;
     }

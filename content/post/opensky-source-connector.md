@@ -1,7 +1,6 @@
 +++
 title = "Building an OpenSky Kafka Source Connector"
 date = "2020-04-01"
-#image = "opensky.png"
 +++
 
 I am humbled to have the opportunity to contribute to Confluent's Blog.  It is one of my go to resources

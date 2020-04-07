@@ -1,10 +1,7 @@
----
-title: Building an Enterprise Eventing Framework
-date: 2020-02-01
-excerpt: Bryan Zelle presents on the work done at Centene; I present a visual demo of the application.
-authors:
-  - Neil Buesing
----
++++
+title = "Building an Enterprise Eventing Framework"
+date = "2020-02-01"
++++
 
 How Centene built an eventing framework available within 6 months of starting development.
 
