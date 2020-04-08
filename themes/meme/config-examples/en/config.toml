@@ -1,8 +1,8 @@
 ##########################################
 # Site Settings
 
-baseURL = "https://www.buesing.dev/"
-title = "Neil Buesing's Blog"
+baseURL = "https://example.com/"
+title = "Hugo Theme MemE"
 languageCode = "en"
 hasCJKLanguage = false
 # Copyright information (Markdown supported)
@@ -94,17 +94,17 @@ uglyURLs = false
 # Author’s information
 [author]
     # Name
-    name = "Neil Buesing"
+    name = "reuixiy"
     # Email
-    email = "neil.buesing@objectpartners.com"
+    email = "reuixiy@gmail.com"
     # Motto or introduction
-    motto = "Apache Kafka"
+    motto = "Viva La Vida"
     # Avatar
     avatar = "/icons/apple-touch-icon.png"
     # Personal website, default: baseURL
-    website = "https://www.buesing.dev/"
+    website = "https://io-oi.me/"
     # Twitter
-    twitter = "nbuesing"
+    twitter = "reuixiy"
 
 # Related content
 [related]
@@ -196,7 +196,7 @@ uglyURLs = false
     #     pre = "internal"
     #     post = "home"
     [[menu.main]]
-        url = "/post/"
+        url = "/posts/"
         name = "Posts"
         weight = 2
         pre = "internal"
@@ -296,7 +296,7 @@ uglyURLs = false
     # Note: invalid for header layout flex
 
     # Highlight current menu item by section?
-    activeInSection = true
+    activeInSection = false
     # Note: if true, the menu item in the
     #       post page will be highlighted
     #       also if that post’s section is
@@ -345,11 +345,11 @@ uglyURLs = false
     # Note: used for HTML head meta, JSON-LD,
     #       Open Graph, Atom, RSS
 
-    siteCreatedTime = "2020-01-01T00:00:00+00:00"
+    siteCreatedTime = "1969-07-20T20:17:43+00:00"
     # ATTENTION: keep this format, change
     #            the number
 
-    siteTwitter = "nbuesing"
+    siteTwitter = "reuixiy"
     # Note: used for Twitter Cards
 
 
@@ -421,7 +421,7 @@ uglyURLs = false
     ######################################
     # List Page
 
-    #listWidth = 30
+    listWidth = 30
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
@@ -666,16 +666,16 @@ uglyURLs = false
 
     enableGoogleAnalytics = false
 
-    trackingCodeType = "analytics"
+    trackingCodeType = "gtag"
     # Note: gtag or analytics
 
-    trackingID = "UA-163001818-1"
+    trackingID = ""
 
 
     ######################################
     # Google Site Verification
 
-    googleSiteVerification = "UA-163001818-1"
+    googleSiteVerification = ""
 
 
     ######################################
@@ -709,7 +709,7 @@ uglyURLs = false
     #            supported
 
     # The content width of the post
-    postWidth = 55
+    postWidth = 32
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
@@ -845,7 +845,7 @@ uglyURLs = false
 
     enableImageHost = false
 
-    imageHostURL = "https://www.buesing.dev/"
+    imageHostURL = "https://example.com/"
 
     # Replace the image link in the HTML
     # head meta also?
@@ -1099,16 +1099,16 @@ uglyURLs = false
 
     displayShareOnText = false
 
-    shareOnTwitter = false
-    shareOnFacebook = false
-    shareOnLinkedIn = false
-    shareOnTelegram = false
-    shareOnWeibo = false
-    shareOnDouban = false
-    shareOnQQ = false
-    shareOnQzone = false
+    shareOnTwitter = true
+    shareOnFacebook = true
+    shareOnLinkedIn = true
+    shareOnTelegram = true
+    shareOnWeibo = true
+    shareOnDouban = true
+    shareOnQQ = true
+    shareOnQzone = true
 
-    shareViaQRCode = false
+    shareViaQRCode = true
 
 
     ######################################
@@ -1194,7 +1194,7 @@ uglyURLs = false
 
     # Leave it empty("") if you don’t want
     # the icon
-    iconBetweenYearAndAuthor = ""
+    iconBetweenYearAndAuthor = "heart"
     iconColor = "#f06292"
     # Enable heartbeat animation?
     iconAnimation = true
@@ -1202,7 +1202,7 @@ uglyURLs = false
     # Display links to Hugo and MemE?
     displayPoweredBy = true
 
-    displaySiteCopyright = false
+    displaySiteCopyright = true
 
     # Custom Footer (Markdown supported)
     customFooter = ""

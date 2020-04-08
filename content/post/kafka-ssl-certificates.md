@@ -1,6 +1,8 @@
 +++
 title = "What I learned about SSL Certificates when building a Secured Kafka Cluster"
 date = "2020-04-07"
+tags = [ "SSL", "Kafka", "Certifiates" ]
+categories = [ "Apache Kafka", "Cluster" ]
 +++
 
 To build a multi-protocol Apache Kafka Clusters to allow for __SSL Client Authentication__ with
