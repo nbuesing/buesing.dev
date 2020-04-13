@@ -1,7 +1,7 @@
 +++
 title = "What I learned about SSL Certificates when building a Secured Kafka Cluster"
 date = "2020-04-07"
-tags = [ "SSL", "Kafka", "Certifiates" ]
+tags = [ "SSL", "Kafka", "Certificates" ]
 categories = [ "Apache Kafka", "Cluster" ]
 +++
 
