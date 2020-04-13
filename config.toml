@@ -665,7 +665,7 @@ uglyURLs = false
     # Note: render only in production
     #       environment
 
-    enableGoogleAnalytics = false
+    enableGoogleAnalytics = true
 
     trackingCodeType = "analytics"
     # Note: gtag or analytics
