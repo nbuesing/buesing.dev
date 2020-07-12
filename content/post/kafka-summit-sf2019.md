@@ -1,15 +1,17 @@
 +++
 title = "Building an Enterprise Eventing Framework"
 date = "2020-02-01"
+tags = [ "Kafka" ]
+categories = [ "Apache Kafka", "Kafka Streams", "Kafka Summit" ]
 +++
 
 How Centene built an eventing framework available within 6 months of starting development.
 
-# Link
+### Link
 
 [Building an Enterprise Eventing Framework](https://www.confluent.io/kafka-summit-san-francisco-2019/building-an-enterprise-eventing-framework)
 
-# Abstract
+### Abstract
 
 Centene is fundamentally modernizing its legacy monolithic systems to support distributed, real-time event-driven healthcare 
 information processing. A key part of our architecture is the development of a universal eventing framework to accommodate 

@@ -2,11 +2,8 @@
 title = "Abstract: Synchronous Commands Over Apache Kafka"
 date = "2020-07-11"
 tags = [ "Kafka", "RESTful", "CQRS" ]
-categories = [ "Apache Kafka", "Kafka Streams" ]
+categories = [ "Apache Kafka", "Kafka Streams", "Kafka Summit" ]
 +++
-
-
-### Abstract
 
 You have built an event-driven system leveraging Apache Kafka. Now you face the challenge of integrating traditional synchronous request-response capabilities, such as user interaction, through an HTTP web service.
 
@@ -27,11 +24,3 @@ We will explore the above considerations with an interactive quiz application bu
 
 * My session will be presented on Monday, August 24th, 4:00 PM CDT (2:00 PM PDT)
 * See complete [Kafka Summit 2020 Schedule](https://events.kafka-summit.org/2020-schedule) for any updates.
-
-### GitHub
-
-* http://github.com/nbuesing/quizzer
-
-### Live Demo
-
-* <TBD>

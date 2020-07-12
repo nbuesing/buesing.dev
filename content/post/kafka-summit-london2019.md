@@ -1,18 +1,20 @@
 +++
 title = "Where are my Keys?"
 date = "2020-01-01"
+tags = [ "Kafka" ]
+categories = [ "Apache Kafka", "Kafka Streams", "Kafka Summit" ]
 +++
 
 Sometimes the hard part to Kafka Streams is understanding how to partition the data.
 
-My talk was titled "Using Location Data to Showcase Keys, Windows, and Joins in Kafka Streams DSL and KSQL",
-it really should have been "Where's My Keys".
+My talk titled "Using Location Data to Showcase Keys, Windows, and Joins in Kafka Streams DSL and KSQL",
+should have been "Where's My Keys".
 
-# Link
+### Link
 
 [Using Location Data to Showcase Keys, Windows, and Joins in Kafka Streams DSL and KSQL](https://www.confluent.io/kafka-summit-lon19/using-location-data-showcase-keys-windows-joins)
 
-# Abstract
+### Abstract
 
 Kafka Streams and the addition of KSQL has provided opportunities do stateful processing of data. Sometimes, 
 the biggest challenge is determining how you can join that data. Keying and windowing are core concepts that 
