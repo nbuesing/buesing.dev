@@ -5,23 +5,23 @@ tags = [ "Kafka" ]
 categories = [ "Apache Kafka", "Kafka Streams", "Kafka Summit" ]
 +++
 
-# Kafka Summit Europe 2021 Recap, so far...
-
 This Kafka Summit, like the ones before it, was fantastic. Tons of content to choose from and an excellent virtual venue to use to consume that content. I highly recommend watching many of the sessions on demand. I am working through more content myself, but best to share what I have uncovered so far before I wait until I see everything I want to see.
 
+For the next 3 weeks these presentations are available throught he on-demand portal, located at [KafkaSummit](https://kafkasummit.io). Once the videos are archived, I will update this and reference them directly. Apache Kafka maintains an excellent catalog of presnetations at [https://kafka.apache.org/videos](https://kafka.apache.org/videos).
+
 ## "Mistakes - I've Made a Few. Blunders in Event-driven Architecture"
-###Simon Aubury, Thoughtworks
+### Simon Aubury, Thoughtworks
 
 One of the best ways to learn is to review what you have done and evaluate what was done well and what you would have done differently. Simon is an excellent storyteller, and his insights are of great value. If you are looking to build an event-driven system (ideally in Kafka, but even if you are exploring other technologies), this is a must-watch session.
 
 "Passive Aggressive Events" - worth watching for this call-out alone; it is one of many gems in this session.
 
 ## "On Track with Apache Kafka: Building a Streaming ETL Solution with Rail Data"
-###Robin Moffat, Confluent
+### Robin Moffat, Confluent
 
 Simply put, this presentation is pragmatic, complete, and elegant. Robin always does a great job on provided comprehensive end-to-end demonstrations. I love the live demonstrations against the real-time rail data. Geospatial data is a great tool to understand event streaming; this presentation is excellent for anyone in their development journey with event streaming.
 
-Robin refers to one of his examples as being hacky, but I find it quite pragmatic. Using curl and kafkacat and a few other standard UNIX commands to get data into Kafka is what developers want to do when proving out and validating their event pipeline. Robin works to help developers get there quickly and effectively.
+Robin refers to one of his examples as being _hacky_, but I find it quite pragmatic. Using curl and kafkacat and a few other standard UNIX commands to get data into Kafka is what developers want to do when proving out and validating their event pipeline. Robin works to help developers get there quickly and effectively.
 
 ## "Event-driven Applications with Kafka, Micronaut, and AWS Lambda"
 ### Dave Klein, Confluent
@@ -35,14 +35,14 @@ Confluent Cloud, a sink connector for AWS lambda, a Micronaut application built 
 
 Kafka Streams is an event-based processing engine leveraging Kafka to make that possible. KsqlDB is an abstraction built on Kafka Streams. There is a lot you can do with this library for building your streaming solutions. However, building deterministic streaming applications is quite challenging, and Kafka Streams and the use of temporal semantics is one way to get there. As Matthias says, "Temporal joins are a key concept of stream processing."
 
-Matthias's ability to distill temporal semantics is excellent. He provides clear examples to help you understand complicated scenarios. It feels like Matthais has built a fantastic progression of presentations over the last few years on Kafka Streams and the importance of understanding time when doing event processing; check those out too.
+Matthias's ability to distill temporal semantics is excellent. He provides clear examples to help you understand complicated scenarios. It feels like Matthais has built a fantastic progression of presentations over the last few years on Kafka Streams and the importance of understanding time when doing event processing; check those out too: [The Flux Capacitor of Kafka Streams and ksqlDB](https://www.confluent.io/resources/kafka-summit-2020/the-flux-capacitor-of-kafka-streams-and-ksqldb/) and [What's the time? ...and why?](https://www.confluent.io/kafka-summit-san-francisco-2019/whats-the-time-and-why/).
 
 ## "Advanced Change Data Streaming Patterns in Distributed Systems"
-### Gunnar Morling, RedHat and Hans-Peter Grahsl, Netconomy\
+### Gunnar Morling, RedHat and Hans-Peter Grahsl, Netconomy
 
 Integration with legacy databases seems to be a cornerstone to librating data to be used in event-driven systems. Leveraging change-data-capture tooling to a database is the first and easy step for doing this process. Providing meaningful higher-level abstractions of that data is where it gets more complicated.
 
-Outbox Pattern, Strangler fig Pattern, and Saga patterns are critical patterns to making change-data-capture successful. Both Gunnar and Hand-Peter provide an excellent overview. I have been a fan of Debeizum for a long time now, and glad it is used here to demonstrate these patterns.
+Outbox Pattern, Strangler fig Pattern, and Saga patterns are critical patterns to making change-data-capture successful. Both Gunnar and Hand-Peter provide an excellent overview. I have been a fan of [Debezium](https://github.com/debezium/debezium) for a long time now, and glad it is used here to demonstrate these patterns.
 
 ## "Streaming With Structure"
 ### Kate Stanley and Salma Saeed, IBM
