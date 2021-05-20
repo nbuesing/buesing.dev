@@ -129,8 +129,11 @@ self-documenting too.
 
 An example of inlining a file concatenation.
 ```
--config <(cat ./openssl.cnf <(printf "\n[ext]\nbasicConstraints=CA:TRUE,pathlen:0"))
+-config <(cat ./openssl.cnf <(printf "\n[ext]\nbasicConstraints=CA:TRUE,pathlen:1"))
 ```
+
+_update 5/2021_: it has come to my attention that due to intermediate certificate pathlen of 1 is needed. I am not sure why
+this didn't cause me issues in my initial implementation; additional investigation is needed. 
 
 ## __Check your OpenSSL documentation__
 
