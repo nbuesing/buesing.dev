@@ -7,7 +7,7 @@ categories = [ "Apache Kafka", "Kafka Streams", "Kafka Summit" ]
 
 This Kafka Summit, like the ones before it, was fantastic. Tons of content to choose from and an excellent virtual venue to use to consume that content. I highly recommend watching many of the sessions on demand. I am working through more content myself, but best to share what I have uncovered so far before I wait until I see everything I want to see.
 
-For the next 3 weeks these presentations are available throught he on-demand portal, located at [KafkaSummit](https://kafkasummit.io). Once the videos are archived, I will update this and reference them directly. Apache Kafka maintains an excellent catalog of presnetations at [https://kafka.apache.org/videos](https://kafka.apache.org/videos).
+Until mid-June these presentations are available through the on-demand portal, located at [KafkaSummit](https://kafkasummit.io). Once the videos are archived, I will update this and reference them. Apache Kafka maintains an excellent catalog of presentations at [https://kafka.apache.org/videos](https://kafka.apache.org/videos).
 
 ## "Mistakes - I've Made a Few. Blunders in Event-driven Architecture"
 ### Simon Aubury, Thoughtworks
