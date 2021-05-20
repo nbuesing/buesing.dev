@@ -17,7 +17,7 @@ One of the best ways to learn is to review what you have done and evaluate what 
 "Passive Aggressive Events" - worth watching for this call-out alone; it is one of many gems in this session.
 
 ## "On Track with Apache Kafka: Building a Streaming ETL Solution with Rail Data"
-### Robin Moffat, Confluent
+### Robin Moffatt, Confluent
 
 Simply put, this presentation is pragmatic, complete, and elegant. Robin always does a great job on provided comprehensive end-to-end demonstrations. I love the live demonstrations against the real-time rail data. Geospatial data is a great tool to understand event streaming; this presentation is excellent for anyone in their development journey with event streaming.
 
