@@ -93,9 +93,19 @@ In a recent episode of [Between Chair and Keyboard](https://tanzu.vmware.com/dev
 Thanks, Tim, for continuing to inspire, and thanks Naha for doing that for another technology.
 
 
+## "Capacity Planning Your Kafka Cluster"
+### Jason Bell, Digitalis
+
+If you need excellent guidelines to ensure you deploy a Kafka Cluster that can meet your application needs, look to Jason's overview on getting you there. He has tons of experience managing Apache Kafka; learn from someone who is doing the work.
+
+He talks about what is asked of application teams to help ensure that the cluster can properly manage and support it. He covers a lot, and my dog, Katniss, is now ready to get her paws wet and help me ensure Kafka Clusters are properly size and configured.
+
+![Katniss](/images/katniss_1.jpeg)
+
+
 ## What's next
 
-I will continue to explore the content; I hope to find another 11 sessions for me to watch and encourage others to explore.
+I will continue to explore the content; I hope to find another 12 sessions for me to watch and encourage others to explore.
 
 
 
