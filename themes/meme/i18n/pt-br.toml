@@ -1,5 +1,5 @@
 [ellipsis]
-other = "..."
+other = "…"
 
 [colon]
 other = ": "
@@ -56,11 +56,12 @@ other = "404 - Página não encontrada"
 [fofLinkText]
 other = "Leve-me para página inicial"
 
-[serviceWorkerUpdatedText]
-other = "Nova atualização disponível"
+[searchResultsTitle]
+one = "Encontrado um resultado para “{{ .Term }}”"
+other = "Encontrados {{ .Count }} resultados para “{{ .Term }}”"
 
-[serviceWorkerUpdatedAction]
-other = "Recarregar"
+[searchResultsNone]
+other = "Não foram encontrados resultados para “{{ .Term }}”"
 
 
 # Redes Sociais

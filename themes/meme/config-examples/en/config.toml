@@ -36,7 +36,7 @@ enableGitInfo = false
 # Enable generation of `robots.txt` file?
 enableRobotsTXT = true
 
-# Number of items per page in paginated 
+# Number of items per page in paginated
 # lists (valid for the `posts` homepage
 # layout in MemE)
 paginate = 5
@@ -91,6 +91,10 @@ uglyURLs = false
         endLevel = 6
         ordered = true
 
+# HTML minify
+[minify.tdewolff.html]
+    keepWhitespace = false
+
 # Author’s information
 [author]
     # Name
@@ -136,16 +140,26 @@ uglyURLs = false
     mediaType = "application/rss+xml"
     baseName = "rss"
 
+# Search index for lunr.js
+[outputFormats.SearchIndex]
+    mediaType = "application/json"
+    baseName = "search"
+
+# Search index for Algolia
+[outputFormats.Algolia]
+    mediaType = "application/json"
+    baseName = "algolia"
+    isPlainText = true
+    notAlternative = true
+
 # Hugo’s output control
 [outputs]
     page = ["HTML"]
-    home = ["HTML", "SectionsAtom", "SectionsRSS"]
+    # home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex", "Algolia"]
+    home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex"]
     section = ["HTML"]
-    # Taxonomy
-    taxonomyTerm = ["HTML"]
-    # Taxonomy term
     taxonomy = ["HTML"]
-    # Note: https://github.com/gohugoio/hugo/issues/4528#issuecomment-508488859
+    term = ["HTML"]
 
 # Maximum number of items in the Atom & RSS feed
 [services.rss]
@@ -171,7 +185,7 @@ uglyURLs = false
 
 # The configuration instructions in the
 # menu are as follows:
-# url           URL
+# pageref/url   internal/external URL
 # name          Text (won’t display if it
 #               is left empty("") or does
 #               not exist)
@@ -182,39 +196,39 @@ uglyURLs = false
 #               is left empty("") or does
 #               not exist)
 # identifier    Icon’s class name
-#               (there are two speacial
+#               (there are three special
 #               values for header layout
 #               flex: `theme-switcher`,
-#               `lang-switcher`)
+#               `lang-switcher`, `search`)
 
 [menu]
     ## Menu bar
     # [[menu.main]]
-    #     url = "/"
+    #     pageref = "/"
     #     name = "Home"
     #     weight = 1
     #     pre = "internal"
     #     post = "home"
     [[menu.main]]
-        url = "/posts/"
+        pageref = "/posts/"
         name = "Posts"
         weight = 2
         pre = "internal"
         post = "archive"
     [[menu.main]]
-        url = "/categories/"
+        pageref = "/categories/"
         name = "Categories"
         weight = 3
         pre = "internal"
         post = "th"
     [[menu.main]]
-        url = "/tags/"
+        pageref = "/tags/"
         name = "Tags"
         weight = 4
         pre = "internal"
         post = "tags"
     [[menu.main]]
-        url = "/about/"
+        pageref = "/about/"
         name = "About"
         weight = 5
         pre = "internal"
@@ -225,6 +239,10 @@ uglyURLs = false
     [[menu.main]]
         weight = 7
         identifier = "lang-switcher"
+    [[menu.main]]
+        weight = 8
+        identifier = "search"
+        post = "search"
 
 
 
@@ -237,6 +255,9 @@ uglyURLs = false
 
     enableHeader = true
 
+    enableHeaderAutoHide = false
+    # Note: works for header layout flex only
+
     displayHeaderInHome = true
     # Note: invalid for header layout flex
 
@@ -245,15 +266,6 @@ uglyURLs = false
 
     headerLayout = "flex"
     # Note: center or flex
-
-    headerFallbackWidth = "32em"
-    # Note: by default, MemE uses main-inner’s
-    #       width for `headerWidth`, but in
-    #       some pages (e.g. homepage layout
-    #       poetry, footage), there is no
-    #       main-inner, so you need to give
-    #       a fallback value for this
-    #       situation.
 
     # Hide menu bar and display a toggle
     # on narrow screen?
@@ -407,6 +419,11 @@ uglyURLs = false
     # category?
     displayPostsCount = true
 
+    # Set to a non-negative number to limit
+    # the number of posts displayed per
+    # category/section.
+    limitPostsLimit = -1
+
 
     ######################################
     # Tags Page
@@ -421,7 +438,7 @@ uglyURLs = false
     ######################################
     # List Page
 
-    listWidth = 30
+    listWidth = 36
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
@@ -462,6 +479,11 @@ uglyURLs = false
     # Display count of posts in each
     # taxonomy term?
     displayTaxonomyTermCount = true
+
+    # Set to a non-negative number to limit
+    # the number of posts displayed per
+    # taxonomy term.
+    limitEntriesLimit = -1
 
 
     ######################################
@@ -523,6 +545,10 @@ uglyURLs = false
     #       may still read your blog in
     #       light mode, even if you have
     #       hidden the theme toggle.
+    #       Unless you enable the following
+    #       option.
+
+    overrideSystemPreferences = false
 
 
     ######################################
@@ -581,8 +607,6 @@ uglyURLs = false
     #       environment
 
     enableServiceWorker = false
-    # Note: need third-party support, see
-    #       https://io-oi.me/tech/pwa-via-workbox/
 
 
     ######################################
@@ -613,6 +637,9 @@ uglyURLs = false
     #       `mermaid` in post’s Front Matter
     #       has a higher priority than here
 
+    mermaidTheme = 'default'
+    mermaidThemeDark = 'dark'
+
 
     ######################################
     # Comments
@@ -625,6 +652,9 @@ uglyURLs = false
     #       `comments` in post’s Front Matter
     #       has a higher priority than here
 
+    # directly load the comments after pages loaded
+    autoLoadComments = false
+
     ## Disqus
     enableDisqus = false
     disqusShortname = ""
@@ -634,8 +664,6 @@ uglyURLs = false
     valineAppId = ""
     valineAppKey = ""
     valinePlaceholder = "Just go go"
-    valineNotify = false
-    valineVerify = false
     valinePath = ""
     valineAvatar = "mm"
     valineMeta = ["nick", "mail", "link"]
@@ -643,9 +671,13 @@ uglyURLs = false
     valineLang = "en"
     valineVisitor = false
     valineHighlight = true
-    avatarForce = false
+    valineAvatarForce = false
     valineRecordIP = false
     valineServerURLs = ""
+    valineEmojiCDN = ""
+    valineEmojiMaps = {}
+    valineEnableQQ = false
+    valineRequiredFields = []
     # Note: https://valine.js.org/
 
     ## Utterances
@@ -656,6 +688,23 @@ uglyURLs = false
     utterancesThemeDark = "photon-dark"
     utterancesLabel = ""
     # Note: https://utteranc.es/
+
+    ## Gitalk
+    enableGitalk = false
+    gitalkClientID = "your_client_id"
+    gitalkClientSecret = "your_client_secret"
+    gitalkRepo = "your_repository"
+    gitalkOwner = "your_gitalk_owner"
+    gitalkAdmin = ["your_gitalk_admin"]
+    gitalkLable = ["Gitalk"]
+    gitalkDistractionFreeMode = false
+    gitalkPerPage = 10
+    gitalkLanguage = "en"
+    gitalkPagerDirection = "last"
+    gitalkCreateIssueManually = false
+    gitalkProxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"
+    gitalkEnableHotKey = true
+    # Note: https://github.com/gitalk/gitalk
 
 
     ######################################
@@ -695,6 +744,16 @@ uglyURLs = false
 
 
     ######################################
+    # Yandex.Metrika
+    # https://metrika.yandex.ru/
+
+    # Note: render only in production
+    #       environment
+
+    yandexMetrikaId = ""
+
+
+    ######################################
     # Post Settings
 
     # The color change duration of the
@@ -709,7 +768,7 @@ uglyURLs = false
     #            supported
 
     # The content width of the post
-    postWidth = 32
+    postWidth = 36
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
@@ -803,6 +862,9 @@ uglyURLs = false
     # Headings Anchor
 
     enableHeadingsAnchor = true
+    # Note: *global settings*
+    #       `anchor` in post’s Front Matter
+    #       has a higher priority than here
 
     # Level range of headings
     headingsOpt = "1-6"
@@ -899,6 +961,11 @@ uglyURLs = false
 
 
     ######################################
+    # Scrollbar
+    customizeScrollbar = true
+
+
+    ######################################
     # Typography
 
     ######################################
@@ -949,7 +1016,7 @@ uglyURLs = false
     ######################################
     ## Font Size (unit: px)
 
-    fontSize = 20
+    fontSize = 18
 
     ######################################
     ## Tab Size
@@ -1178,6 +1245,8 @@ uglyURLs = false
 
     displayBackToTopInHome = true
 
+    displayBackToTopOnMobile = false
+
     backToTopIcon = "arrow-up"
 
 
@@ -1186,8 +1255,11 @@ uglyURLs = false
 
     enableFooter = true
 
+    displayFooter = true
+
     displayFooterInHome = true
 
+    displayCopyleftSymbol = false
     displayCopyrightSymbol = true
 
     displaySiteCreatedYear = true
@@ -1217,6 +1289,10 @@ uglyURLs = false
     #       Leave it empty("") if you
     #       don’t need the text or icon
     #       https://busuanzi.ibruce.info/
+
+    # Socials
+    enableSocials = true
+    # Note: see data/Socials.toml
 
 
     ######################################
@@ -1248,9 +1324,21 @@ uglyURLs = false
     ######################################
     # Fingerprinting and SRI
 
-    enableFingerprint = true
     # Note: valid for CSS and JS generated
     #       by MemE only
+
+    enableFingerprint = true
+
+    enableSRI = false
+    # Note: subresource integrity will
+    #       block MemE CSS and JS on third
+    #       party websites like Google
+    #       Translate. To prevent this,
+    #       your server has to send the
+    #       following header for CSS and
+    #       JS requests:
+    #
+    #       Access-Control-Allow-Origin: *
 
 
     ######################################
@@ -1270,7 +1358,6 @@ uglyURLs = false
     # Smooth Scroll
 
     enableSmoothScroll = true
-    # Note: https://github.com/cferdinandi/smooth-scroll
 
 
     ######################################
@@ -1285,6 +1372,34 @@ uglyURLs = false
 
     enableInstantPage = true
     # Note: https://github.com/instantpage/instant.page
+
+
+    ######################################
+    # Lunr search
+
+    # Note: This requires SearchIndex
+    #       output to be enabled.
+
+    enableLunrSearch = true
+    # Note: https://lunrjs.com/
+
+
+    ######################################
+    # Algolia search
+
+    # Note: This requires Algolia
+    #       output to be enabled.
+    #       And you need to upload the
+    #       generated algolia.json to
+    #       Algolia every time you rebuild
+    #       your site.
+
+    enableAlgoliaSearch = false
+
+    algoliaAppId = ""
+    algoliaApiKey = ""
+    algoliaIndexName = ""
+    # Note: https://www.algolia.com/
 
 
     ######################################
