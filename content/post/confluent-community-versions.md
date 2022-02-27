@@ -1,8 +1,8 @@
 +++
 title = "Confluent Community Versions"
 date = "2022-02-22"
-tags = [  ]
-categories = [ "Confluent Community", "Apache Kafka" ]
+tags = [ "Kafka" ]
+categories = [ "Apache Kafka", "Version" ]
 postWidth = 65
 +++
 

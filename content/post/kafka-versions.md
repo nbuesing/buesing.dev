@@ -2,7 +2,7 @@
 title = "Apache Kafka Versions"
 date = "2022-02-22"
 tags = [  ]
-categories = [ "Apache Kafka" ]
+categories = [ "Apache Kafka", "Version" ]
 +++
 
 Apache Kafka versions, release date, bug fix release date, and key library dependencies.
