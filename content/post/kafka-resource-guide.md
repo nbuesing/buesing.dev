@@ -135,7 +135,7 @@ This includes all the Udemy courses I reference as well.
 ## Confluent
 
 Confluent offers instructor-led and self-paced training. 
-See [https://www.confluent.io/training/](https://www.confluent.io/training/) for details.
+See [https://www.confluent.io/training](https://www.confluent.io/training/) for details.
 
 ### Instructor Lead
 
@@ -163,9 +163,9 @@ If the instructor does not know the answer, they reach out during breaks to othe
 
 Confluent provides plenty of examples, and you should check them out.
 
-[https://developer.confluent.io/](https://developer.confluent.io/)
+[https://developer.confluent.io](https://developer.confluent.io/)
 
-[https://kafka-tutorials.confluent.io/](https://kafka-tutorials.confluent.io/)
+[https://kafka-tutorials.confluent.io](https://kafka-tutorials.confluent.io/)
 
 ### Confluent Platform Demo
 
@@ -181,7 +181,7 @@ The slack community `confluentcommunity.slack.com` is an excellent resource for 
 
 ### Confluent Community Forum
 
-The community forum [https://forum.confluent.io/](https://forum.confluent.io/) was created to provide a searchable archive, which is not available from Slack. 
+The community forum [https://forum.confluent.io](https://forum.confluent.io/) was created to provide a searchable archive, which is not available from Slack. 
 Slack is used for interactive questions and the forum seems to be used where answers and solutions are to be searchable. 
 Personally, I enjoy the more interactive nature of Slack and can lead to some good discussions. 
 For finding answers and/or to ensure that the questions and answers can help others, the forum is the place to go.
@@ -189,7 +189,7 @@ For finding answers and/or to ensure that the questions and answers can help oth
 ## Udemy
 
 There are many courses available on Udemy for a very reasonable price, provided you have a coupon code. 
-You should never spend more than $20. Start at [https://www.udemy.com/topic/apache-kafka/](https://www.udemy.com/topic/apache-kafka/).
+You should never spend more than $20. Start at [https://www.udemy.com/topic/apache-kafka](https://www.udemy.com/topic/apache-kafka/).
 
 __I strongly recommend Stéphane Maarek’s courses.__
 Wait for a sale (they happen frequently) or find a discount code before purchasing. 
@@ -203,7 +203,7 @@ Personally, I would dedicate watching it at a faster speed than trying to multit
 
 ### Learn Apache Kafka for Beginners v2
 
-[https://www.udemy.com/apache-kafka/](https://www.udemy.com/apache-kafka/)
+[https://www.udemy.com/apache-kafka](https://www.udemy.com/apache-kafka/)
 
 This is an excellent first course for Apache Kafka.
 
@@ -218,7 +218,7 @@ This has a few dated commands, including the above mentioned __`--zookeeper`__ c
 
 ### Kafka Streams for Data Processing
 
-[https://www.udemy.com/kafka-streams/](https://www.udemy.com/kafka-streams/)
+[https://www.udemy.com/kafka-streams](https://www.udemy.com/kafka-streams/)
 
 I highly recommend this for developers who are working with Kafka Streams. You should have completed the beginner course, the Confluent Developer Training course, or have experience with Apache Kafka producers and consumers.
 
@@ -228,7 +228,7 @@ If you need to leverage the processor API, having experience with the DSL will h
 
 ### Confluent Schema Registry and Rest Proxy
 
-[https://www.udemy.com/confluent-schema-registry/](https://www.udemy.com/confluent-schema-registry/)
+[https://www.udemy.com/confluent-schema-registry](https://www.udemy.com/confluent-schema-registry/)
 
 If you are new to Avro, you could benefit from this course. 
 However, this course isn’t at the level of the others.
@@ -237,14 +237,14 @@ I recommend this course to clients, as the need for data governance and a schema
 
 ### Kafka Connect Hands-on Learning
 
-[https://www.udemy.com/confluent-schema-registry/](https://www.udemy.com/confluent-schema-registry/)
+[https://www.udemy.com/course/kafka-connect](https://www.udemy.com/course/kafka-connect/)
 
 My original thought on this course was to avoid it. However, the more I think about it, the course gives excellent foundations to the schema registry. 
 I needed to rethink this course as though I did not know about connectors, connector-cluster, or writing a connector. If you are working with connectors and are new to them, take this course.
 
 ### Kafka Monitoring and Operations
 
-[https://www.udemy.com/kafka-monitoring-and-operations/](https://www.udemy.com/kafka-monitoring-and-operations/)
+[https://www.udemy.com/kafka-monitoring-and-operations](https://www.udemy.com/kafka-monitoring-and-operations/)
 
 Even though I had already use Prometheus and Grafana with my docker clusters, this was a great course. 
 It is also presented using AWS, which is an excellent reminder of some AWS concepts. While it is instructed w/out fully leveraging the free tier, I was able to do all of the instructional exercises using AWS free-tier resources.
@@ -253,14 +253,14 @@ I plan on watching this course again to pull out some of the concepts he address
 
 ### Kafka Cluster Setup and Administration
 
-[https://www.udemy.com/kafka-cluster-setup/](https://www.udemy.com/kafka-cluster-setup/)
+[https://www.udemy.com/kafka-cluster-setup](https://www.udemy.com/kafka-cluster-setup/)
 
 This is my favorite course. It uses AWS, and I was able to do all of the exercises using the free-tier. 
 Again, it is a course I want to watch again to leverage and reference material from this course for clients. Even if you are a developer and do not want to be part of Operations, consider taking this course. Also, having an overview of operations improves your Kafka development skills.
 
 ### Kafka Security (SSL SASL Kerberos ACL)
 
-[https://www.udemy.com/apache-kafka-security/](https://www.udemy.com/apache-kafka-security/)
+[https://www.udemy.com/apache-kafka-security](https://www.udemy.com/apache-kafka-security/)
 
 If you ever need to set up a Kafka Cluster with security, I would highly recommend this course. 
 Developers do not need to take this course.
@@ -268,12 +268,19 @@ I found this course very helpful with Kafka and Kerberos.
 
 ### Apache Kafka Series - KSQL for Stream Processing - Hands-On!
 
-[https://www.udemy.com/kafka-ksql/](https://www.udemy.com/kafka-ksql/)
+[https://www.udemy.com/kafka-ksql](https://www.udemy.com/kafka-ksql/)
 
 An excellent introduction to ksqlDB. 
 I do not see this course as a needed course by developers who are familiar with Kafka Streams. 
 However, if you are not doing Kafka Streams and want exposure to stream processing and be able to take advantage of it, then I would recommend taking this course.
 
+### Kafkademy
+
+Stéphane Maarek and the rest of the team at Conduktor also has a great introduction to Apache Kafka.
+
+[What is Apache Kafka](https://www.conduktor.io/kafka/what-is-apache-kafka)
+
+What I really enjoy about the hands-on information it provides, like what it gives you in the [CLI Tutorials](https://www.conduktor.io/kafka/kafka-cli-tutorial).
 
 # Resources
 
@@ -343,9 +350,16 @@ Change Data Capture (CDC) is an integral part of leveraging Apache Kafka with le
 Check out chapters 3 and 4 to figure out how CDC works for you and your enterprise needs. 
 This is a small book and some nice call-outs about CDC, something that is a big piece most enterprise clients.
 
+### Gently Down the Stream
+
+[Gently Down the Stream](https://www.gentlydownthe.stream/), Mitch Seymour
+
+This book was writtent to explain Kafka to children, but it a great introduction book for anyone. 
+Give this a great book and great introduction to Apache Kafka.
+
 ## Blogs
 
-The confluent blogs, [https://www.confluent.io/blog/](https://www.confluent.io/blog/), are beneficial. 
+The confluent blogs, [https://www.confluent.io/blog](https://www.confluent.io/blog/), are beneficial. 
 Once you have a little bit of familiarity with Kafka, it is the easiest way to find additional material to inject and improve your understanding of Kafka.
 
 ### Putting Apache Kafka To Use
@@ -362,14 +376,14 @@ This blog covers a lot of what Ben covered in his book. It also gives a working 
 It is a great use-case for interactive queries of Kafka Streams. 
 Shortcomings of Kafka Streams and leveraging interactive queries are no longer a major issue as well, thanks to these Kafka improvement proposals: [KIP-535 - Allow Allow state stores to serve stale reads during rebalance](https://cwiki.apache.org/confluence/display/KAFKA/KIP-535%3A+Allow+state+stores+to+serve+stale+reads+during+rebalance) and [KIP-429: Kafka Consumer Incremental Rebalance Protocol](https://cwiki.apache.org/confluence/display/KAFKA/KIP-429%3A+Kafka+Consumer+Incremental+Rebalance+Protocol).
 
-* [https://www.confluent.io/blog/building-a-microservices-ecosystem-with-kafka-streams-and-ksql/](https://www.confluent.io/blog/building-a-microservices-ecosystem-with-kafka-streams-and-ksql/)
+* [https://www.confluent.io/blog/building-a-microservices-ecosystem-with-kafka-streams-and-ksql](https://www.confluent.io/blog/building-a-microservices-ecosystem-with-kafka-streams-and-ksql/)
 
 The code from the above blog and other examples from Confluent can be found in their [Kafka Streams Examples](https://github.com/confluentinc/kafka-streams-examples.git) repository. 
 
 ### Event Sourcing
 
-* [https://www.confluent.io/blog/event-sourcing-cqrs-stream-processing-apache-kafka-whats-connection/](https://www.confluent.io/blog/event-sourcing-cqrs-stream-processing-apache-kafka-whats-connection/)
-* [https://www.confluent.io/blog/event-sourcing-using-apache-kafka/](https://www.confluent.io/blog/event-sourcing-using-apache-kafka/)
+* [https://www.confluent.io/blog/event-sourcing-cqrs-stream-processing-apache-kafka-whats-connection](https://www.confluent.io/blog/event-sourcing-cqrs-stream-processing-apache-kafka-whats-connection/)
+* [https://www.confluent.io/blog/event-sourcing-using-apache-kafka](https://www.confluent.io/blog/event-sourcing-using-apache-kafka/)
 * [https://www.confluent.io/blog/event-sourcing-vs-derivative-event-sourcing-explained](https://www.confluent.io/blog/event-sourcing-vs-derivative-event-sourcing-explained)
 
 ### Operations & Performance
@@ -397,7 +411,7 @@ This Confluent podcast “**Streaming Audio: a Confluent podcast about Apache Ka
 
 ### Confluent Youtube Channel
 
-Confluent puts all of their videos on this channel, recently Streaming Audio has a video version and available here as wel.
+Confluent puts all of their videos on this channel, recently Streaming Audio has a video version available here as wel.
 
 * [Confluent Channel](https://www.youtube.com/channel/UCmZz-Gj3caLLzEWBtbYUXaA/)
 
@@ -425,7 +439,6 @@ This 10-minute video will give you an excellent overview of the core concept of 
 A nice 10+ minute introduction.
 
 * [What is Apache Kafka?](https://www.youtube.com/watch?v=06iRM1Ghr1k). October 30th, 2019; Tim Berglund
-
 
 #### Events, Dear Boy, Events
 
@@ -462,14 +475,29 @@ This presentation is a must if you want to start ot unravel how EOS is built wit
 Also, checkout this excellent article by Andy Bryant – multiple points of view is a must to grok Kafka’s exactly-one semantics.
 [Processing Guarentees in Kafka](https://medium.com/@andy.bryant/processing-guarantees-in-kafka-12dd2e30be0e).
 
+#### Kafka Streams: What's the time? ...and why? and The Flux Capacitor of Kafka Streams and ksqlDB
+
+When it comes to understanding Kafka Streams, Windows, State you need to search fo talks by Matthias Sax.
+And you should start with these.
+
+[What's the time? ...and why?](https://www.confluent.io/kafka-summit-san-francisco-2019/whats-the-time-and-why/). Kafka Summit, 2019; Matthias Sax, Confluent
+
+[The Flux Capacitor of Kafka Streams and ksqlDB](https://www.confluent.io/resources/kafka-summit-2020/the-flux-capacitor-of-kafka-streams-and-ksqldb/). Kafka Summit, 2020; Matthais Sax, Confluent
+
+#### Using Kafka to Discover Events Hidden in your Database
+
+This is a great talk.
+It really shows so much about streaming events in a use-case that fix so many enterprise customers I have talked to about Apache Kafka.
+
+[Using Kafka to Discover Events Hidden in your Database](https://www.confluent.io/kafka-summit-san-francisco-2019/using-kafka-to-discover-events-hidden-in-your-database/). Kafka Summit, 2019; Anna McDonald, SAS (now at Confluent)
 
 ## Source Code
 
 Have the source-code downloaded and ready to explore. 
 I find it of great value when someone is unsure of my recommendations. 
 For example, I almost always recommend setting retries to max-integer. 
-I then show the default producer settings used by the Apache Kafka Connect API, which does the same thing. T
-he settings and comments within the code is a great reference to see a set of properties configured as a logical unit.
+I then show the default producer settings used by the Apache Kafka Connect API, which does the same thing. 
+T he settings and comments within the code is a great reference to see a set of properties configured as a logical unit.
 
 * [Apache Kafka](https://github.com/apache/kafka)
 
@@ -593,7 +621,7 @@ If you already use Spark, Flink, or other stateful processing engines then work 
 ## ksqlDB
 
 __ksqlDB__ is an application that provides a level of abstraction on top of a Kafka Streams application. 
-In November 2019, it was released as its own project at [https://ksqldb.io/](https://ksqldb.io/), and is now referred to ksqlDB (it was just ksql prior to that time). 
+In November 2019, it was released as its own project at [https://ksqldb.io](https://ksqldb.io/), and is now referred to ksqlDB (it was just ksql prior to that time). 
 It handles the distribution of tasks between kafka streams deployed to do ksql tasks. 
 KSQL tasks are SQL-like syntax of creating Kafka Stream topologies. 
 In addition to building stream topologies through KSQL, interactive queries of state stores are not available through the same KSQL syntax. 
@@ -604,7 +632,7 @@ Check for tags of the following format `vX.YY.X-ksqldb` within the [repository](
 
 As of Confluent 5.5, the Schema Registry now supports JSON and Protobuf, in addition to Avro,
 
-[https://www.confluent.io/blog/confluent-platform-now-supports-protobuf-json-schema-custom-formats/](https://www.confluent.io/blog/confluent-platform-now-supports-protobuf-json-schema-custom-formats/).
+[https://www.confluent.io/blog/confluent-platform-now-supports-protobuf-json-schema-custom-formats](https://www.confluent.io/blog/confluent-platform-now-supports-protobuf-json-schema-custom-formats/).
 
 The confluent open-source Avro serializer and deserializer are designed around having a schema registry.
 The schema registry allows the Avro data to be put on the Kafka topic without the need to serialize the Schema with it. 
