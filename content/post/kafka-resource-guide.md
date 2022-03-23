@@ -201,9 +201,19 @@ I have found I watched most at speed 1.25 and many segments at 1.5 or 1.75.
 It depends on my familiarity with the content and if it is a lecture or an exercise.
 Personally, I would dedicate watching it at a faster speed than trying to multitask while watching it.
 
-### Learn Apache Kafka for Beginners v2
+### Learn Apache Kafka for Beginners v3
 
 [https://www.udemy.com/apache-kafka](https://www.udemy.com/apache-kafka/)
+
+* Version 3 Review
+
+Version 3 of this course was released in March, 2022. 
+In addition to refreshing to the latest version of Apache Kafka, it also has some example changes. 
+I have yet to watch v3 of this content and will audit it soon.
+The nice thing about Udemy courses is it allows for Authors to refresh courses.
+I don't have to buy a new version, but rather get it as part of my original purchase.
+
+* Version 2 Review
 
 This is an excellent first course for Apache Kafka.
 
