@@ -11,8 +11,8 @@ Confluent Community versions, release date, bug fix release date, and key librar
 <!--more-->
 | Version              | Release     | .X Release | Kafka | Kafka Build           | Scala               | ZK     | RocksDB  | Jackson | slf4j&#8209;log4j12 | Avro                 | ksqlDB                 |
 |----------------------|-------------|------------|-------|-----------------------|---------------------|--------|----------|---------|---------------------|----------------------|------------------------|
-| 7.1.0                | 3/31/2022   |            | 3.1   | 3.1.0+&nbsp;{{<s 9>}} | 2.13.6              | 3.6.3  | 6.22.1.1 | 2.12.3  | 1.7.30              | 1.11.0               | 0.24.0+&nbsp;{{<s A>}} |
-| 7.0.2                |             | 4/1/2022   | 3.0   | 3.0.1+&nbsp;{{<s 8>}} | 2.13.6              | 3.6.3  | 6.19.3   | 2.12.6  | 1.7.30              | 1.11.0               | 0.21.0                 |
+| 7.1.0                | 3/31/2022   |            | 3.1   | 3.1.0&nbsp;{{<s 9>}}  | 2.13.6              | 3.6.3  | 6.22.1.1 | 2.12.3  | 1.7.30              | 1.11.0               | 0.23.0&nbsp;{{<s 10>}} |
+| 7.0.2                |             | 4/1/2022   | 3.0   | 3.0.1&nbsp;{{<s 8>}}  | 2.13.6              | 3.6.3  | 6.19.3   | 2.12.6  | 1.7.30              | 1.11.0               | 0.21.0                 |
 | 7.0.1                |             | 12/3/2021  | 3.0   | 3.0.0+&nbsp;{{<s 7>}} | 2.13.6              | 3.6.3  | 6.19.3   | 2.12.3  | 1.7.30              | 1.10.1               | 0.21.0                 |
 | 7.0.0                | 10/21/12021 |            | 3.0   | 3.0.0                 | 2.13.6              | 3.6.3  | 6.19.3   | 2.12.3  | 1.7.30              | 1.10.1               | 0.21.0                 |
 | 6.2.2                |             | 12/2/2021  | 2.8   | 2.8.1+&nbsp;{{<s 6>}} | 2.13.5              | 3.5.9  | 5.18.4   | 2.10.5  | 1.7.30              | 1.10.1               | 0.17.0                 |
@@ -123,5 +123,4 @@ Usually the biggest difference is the Confluent community release will include b
 
   {{<s 9>}} 3.1.0 + [KAFKA-6502](https://issues.apache.org/jira/browse/KAFKA-6502), reverted [KAFKA-13673](https://issues.apache.org/jira/browse/KAFKA-13673), reverted [KAFKA-13598](https://issues.apache.org/jira/browse/KAFKA-13598)
 
-  {{<s A>}} This is not part of the confluent release notes and comparing community-source version of ksqlDB with Confluent release requires git history comparison. 
-This is based on KLIP list and what is stated in part of this release; still investigating to ensure I have the correct community-source versioned tied to this release.
+  {{<s 10>}} Information pulled from Confluent Release Video [Confluent Platform 7.1| New Features + Updates](https://www.youtube.com/watch?v=1xfyd5hMoNk&t=470s), not from release notes of git repository.
