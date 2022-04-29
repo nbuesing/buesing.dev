@@ -42,7 +42,7 @@ To make this easier, I maintain a table of library dependencies along with track
 
 # Current Version
 
-As of 2/27/2022, Apache Kafka is at 3.1.0 and Confluent’s Community Edition is at 7.0.1 (based on Apache Kafka 3.0.0). 
+As of 3/31/2022, Apache Kafka is at 3.1.0 and Confluent’s Community Edition is at 7.1.0 (based on Apache Kafka 3.1.0). 
 Confluent’s release may have bug-fixes prior to Apache Kafka providing a .X bug-fix release. 
 I highly recommend looking at each release-notes to verify if an issue is fixed in the version you are using (or plan to use).
 
