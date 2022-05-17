@@ -7,29 +7,6 @@ categories = [ "Apache Kafka", "Version" ]
 
 Apache Kafka versions, release date, bug fix release date, and key library dependencies.
 
-
-done
-kafka_2.13-3.2.0.tgz
-licenses/zstd-jni-BSD-2-clause
-libs/jackson-core-2.12.6.jar
-libs/scala-library-2.13.8.jar
-libs/zookeeper-3.6.3.jar
-libs/zstd-jni-1.5.2-1.jar
-libs/lz4-java-1.8.0.jar
-libs/snappy-java-1.1.8.4.jar
-libs/rocksdbjni-6.29.4.1.jar
-
-kafka_2.13-3.1.1.tgz
-licenses/zstd-jni-BSD-2-clause
-libs/jackson-core-2.12.6.jar
-libs/scala-library-2.13.6.jar
-libs/zookeeper-3.6.3.jar
-libs/zstd-jni-1.5.0-4.jar
-libs/lz4-java-1.8.0.jar
-libs/snappy-java-1.1.8.4.jar
-libs/rocksdbjni-6.22.1.1.jar
-
-
 <!--more--> 
 | Version  | Release    | .X Release | Scala   | Zookeeper | RocksDB  | Jackson | slf4j-api | Snappy  | LZ4   | ZSTD    |
 |----------|------------|------------|---------|-----------|----------|---------|-----------| ------- | ----- |---------|
