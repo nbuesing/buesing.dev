@@ -5,6 +5,11 @@ tags = [ "Kafka" ]
 categories = [ "Apache Kafka" ]
 +++
 
+This document is no longer maintained, please check out the version information found on Kinetic Edge, at:
+[Kafka Resource Guide](https://www.kineticedge.io/resources/kafka-resource-guide/).
+
+<!--more-->
+
 # Introduction
 
 This is based on personal experience in supporting various clients over the use of Apache Kafka and Confluent Community Software.

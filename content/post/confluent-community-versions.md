@@ -6,9 +6,13 @@ categories = [ "Apache Kafka", "Version" ]
 postWidth = 65
 +++
 
-Confluent Community versions, release date, bug fix release date, and key library dependencies.
+This document is no longer maintained, please check out the version information found on Kinetic Edge, at:
+[Confluent Community Versions](https://www.kineticedge.io/resources/confluent-community-versions/).
 
 <!--more-->
+
+Confluent Community versions, release date, bug fix release date, and key library dependencies.
+
 | Version              | Release     | .X Release | Kafka | Kafka Build           | Scala               | ZK     | RocksDB  | Jackson | slf4j&#8209;log4j12 | Avro                 | ksqlDB                 |
 |----------------------|-------------|------------|-------|-----------------------|---------------------|--------|----------|---------|---------------------|----------------------|------------------------|
 | 7.1.0                | 3/31/2022   |            | 3.1   | 3.1.0&nbsp;{{<s 9>}}  | 2.13.6              | 3.6.3  | 6.22.1.1 | 2.12.3  | 1.7.30              | 1.11.0               | 0.23.0&nbsp;{{<s 10>}} |

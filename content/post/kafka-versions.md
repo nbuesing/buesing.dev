@@ -5,9 +5,13 @@ tags = [  ]
 categories = [ "Apache Kafka", "Version" ]
 +++
 
-Apache Kafka versions, release date, bug fix release date, and key library dependencies.
+This document is no longer maintained, please check out the version information found on Kinetic Edge, at:
+[Kafka Versions](https://www.kineticedge.io/resources/kafka-versions/).
 
 <!--more--> 
+
+Apache Kafka versions, release date, bug fix release date, and key library dependencies.
+
 | Version  | Release    | .X Release | Scala   | Zookeeper | RocksDB  | Jackson | slf4j-api | Snappy  | LZ4   | ZSTD    |
 |----------|------------|------------|---------|-----------|----------|---------|-----------| ------- | ----- |---------|
 | 3.2.0    | 5/17/2022  |            | 2.13.8  | 3.6.3     | 6.29.4.1 | 2.12.6  | 1.7.36    | 1.1.8.4 | 1.8.0 | 1.5.2-1 |
